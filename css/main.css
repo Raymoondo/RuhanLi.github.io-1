@@ -63,7 +63,7 @@ footer {
 }
     
 #footer{
- position:center;
+ text-align:center;
  bottom:0;
  font-size: 0.5em;
  color: #e8edf3;
