@@ -64,4 +64,6 @@ footer {
 footer a {
     color:#F8F1F1;
     text-decoration: none;
+    position: fixed;
+    right: 10px;
 }
