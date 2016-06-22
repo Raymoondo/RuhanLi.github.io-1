@@ -62,9 +62,9 @@ footer {
     color: #F8F1F1;
 
 #footer {
-   position:fixed;
+   position:absolute;
    bottom:0;
    height:100px;   
    font-size: 1em;
-color: #e8edf3;
+   color: #e8edf3;
 }
