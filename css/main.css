@@ -64,13 +64,6 @@ footer {
     font-size: 1em;
     font-style: oblique;
     color: #F8F1F1;
-}
-#githublink {
-   position:absolute;
-   right:0;
-   height:100px;
-   color: #e8edf3;
-}
 
 #footer {
    position:absolute;
