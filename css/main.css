@@ -68,7 +68,8 @@ footer {
 #githublink {
    position:absolute;
    right:0;
-   height:100px;   
+   height:100px;
+   color: #e8edf3;
 }
 
 #footer {
