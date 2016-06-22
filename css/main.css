@@ -31,9 +31,6 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
-</style>
-</head>
-<body>
 
 a:hover {
     text-decoration: underline;
@@ -51,9 +48,14 @@ p {
 
 }
 footer {
+    position:fixed;
+    bottom:0;
+    left:0;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
+
 
 
 #email {
