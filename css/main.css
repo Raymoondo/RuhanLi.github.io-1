@@ -4,13 +4,8 @@ body {
     background-color: #173e43;
 }
 
-nav ul{
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
 
-nav ul, footer u2 {
+nav ul, footer u1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     position:absolute;
@@ -46,14 +41,6 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-}
 
 #email {
     font-size: 1em;
