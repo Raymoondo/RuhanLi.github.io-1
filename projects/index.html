@@ -4,26 +4,141 @@
 		<title>Projects</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<style>
-			#emp1{
-				width: 320px;
-				height: 240px;
-				position: relative:;
-				top: 0;
-				left: 0;
+			.slide{
+			    max-width: 640px;
+			    height: 480px;
+			    margin: auto;
+			    text-align: center;
+			    vertical-align: middle;
+			    border: none;
+			    overflow: hidden;
+			    margin-bottom: 10px;
 			}
-			#emp2{
-				width: 262px;
-				height: 146px;
-				position: relative:;
-				top: -240px;
-				left: 1px;
+			
+			.slide img{
+			    border: 1px solid black;
+			    max-width: 640px;
+			    height: 480px;
 			}
-			#emp3{
-				width: 320px;
-				height: 240px;
-				position: relative;
-				top: 0;
-				left: 1px;
+			
+			#one{
+			    animation: nextOne 6s infinite alternate;
+			    -moz-animation: nextOne 6s infinite alternate;
+			    -webkit-animation: nextOne 6s infinite alternate;
+			    -o-animation: nextOne 6s infinite alternate;
+			}
+			
+			#two{
+			    animation: nextTwo 6s infinite alternate;
+			    -moz-animation: nextTwo 6s infinite alternate;
+			    -webkit-animation: nextTwo 6s infinite alternate;
+			    -o-animation: nextTwo 6s infinite alternate;
+			}
+			
+			@keyframes nextOne{
+			    0%{
+			        /* go off the screen */
+			        transform: translateX(-642px);
+			    }25%{
+			        transform: translateX(-642px);
+			    }75%{
+			        transform: translateX(0);
+			    }100%{
+			        /* go back */
+			        transform: translateX(0);
+			    }
+			}
+			
+			@keyframes nextTwo{
+			    0%{
+			        transform: translateX(0) translateY(-485px);
+			    }25%{
+			        transform: translateX(0) translateY(-485px);
+			    }75%{
+			        transform: translateX(642px) translateY(-485px);
+			    }100%{
+			        transform: translateX(642px) translateY(-485px);
+			    }
+			}
+			
+			@-webkit-keyframes nextOne{
+			    0%{
+			        /* go off the screen */
+			        transform: translateX(-642px);
+			    }25%{
+			        transform: translateX(-642px);
+			    }75%{
+			        transform: translateX(0);
+			    }100%{
+			        /* go back */
+			        transform: translateX(0);
+			    }
+			}
+			
+			@-webkit-keyframes nextTwo{
+			    0%{
+			        transform: translateX(0) translateY(-485px);
+			    }25%{
+			        transform: translateX(0) translateY(-485px);
+			    }75%{
+			        transform: translateX(642px) translateY(-485px);
+			    }100%{
+			        transform: translateX(642px) translateY(-485px);
+			    }
+			}
+			
+			
+			@-moz-keyframes nextOne{
+			    0%{
+			        /* go off the screen */
+			        transform: translateX(-642px);
+			    }25%{
+			        transform: translateX(-642px);
+			    }75%{
+			        transform: translateX(0);
+			    }100%{
+			        /* go back */
+			        transform: translateX(0);
+			    }
+			}
+			
+			@-moz-keyframes nextTwo{
+			    0%{
+			        transform: translateX(0) translateY(-485px);
+			    }25%{
+			        transform: translateX(0) translateY(-485px);
+			    }75%{
+			        transform: translateX(642px) translateY(-485px);
+			    }100%{
+			        transform: translateX(642px) translateY(-485px);
+			    }
+			}
+			
+			
+			@-o-keyframes nextOne{
+			    0%{
+			        /* go off the screen */
+			        transform: translateX(-642px);
+			    }25%{
+			        transform: translateX(-642px);
+			    }75%{
+			        transform: translateX(0);
+			    }100%{
+			        /* go back */
+			        transform: translateX(0);
+			    }
+			}
+			
+			@-o-keyframes nextTwo{
+			    0%{
+			        transform: translateX(0) translateY(-485px);
+			    }25%{
+			        transform: translateX(0) translateY(-485px);
+			    }75%{
+			        transform: translateX(642px) translateY(-485px);
+			    }100%{
+			        transform: translateX(642px) translateY(-485px);
+			    }
 			}
 		</style>
 	</head>
@@ -41,9 +156,10 @@
         	</div>
         	<p> Employee Database: <a href="https://github.com/RuhanLi/EmployeeDatabase">GitHub Link</a></p>
         	<p>Pictures: </p>
-        	<img id="emp1" src="emp1.png">
-        	<img id="emp3" src="emp3.png">
-        	<img id="emp2" src="emp2.png">
+		<div class="slide">
+		     <img id="one" src="emp1.png">
+		     <img id="two" src="emp3.png">
+		</div>
         	<footer>
         		<p>Email: ruhanli168@gmail.com &nbsp; &nbsp; <a href="https://github.com/RuhanLi">Github Page</a> 
         		</p>
