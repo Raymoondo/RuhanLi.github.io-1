@@ -1,30 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			h1{
-  color:blue;
-  font-size: 20px;
-}
-
-.weatherButton{
-  border-radius: 10px;
-  width: 100px;
-  height: 50px;
-  font-size: 15px;
-  background-image: url("http://images.clipartpanda.com/clouds-clip-art-free-cloud-clip-art_1404142373.jpg");
-  font-weight: bold;
-  transition: .2s ease-in-out;
-  text-shadow:none !important;
-  border:none !important;
-  box-shadow:none !important;
-}
-
-.weatherButton:hover{
-  background-color: #075ed3;
-  cursor: pointer;
-}
-		</style>
 	</head>
 	
 	<body>
@@ -35,24 +11,6 @@
 		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 		<script>
-			$(document).ready(function() {
-  $.simpleWeather({
-    location: 'Toronto, ON',
-    woeid: '',
-    unit: 'c',
-    success: function(weather) {
-      html = '<h1> '+weather.temp+'&deg;'+weather.units.temp;
-      html += '<button class=\"weatherButton\">'+weather.city+', '+weather.region+'</button>';
-      html += '<button class=\"weatherButton\">'+weather.currently+'</button>';
-      html += '<button class=\"weatherButton\">'+weather.wind.chill+'</button></h1>';
-  
-      $("#weather").html(html);
-    },
-    error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
-    }
-  });
-});
 		</script>
 	</body>
 
